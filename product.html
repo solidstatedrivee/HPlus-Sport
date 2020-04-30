@@ -12,7 +12,7 @@
             let getURL = window.location.search;
             let decodeURL = decodeURIComponent(getURL);
             // let prodNameRegex = /\?productName\=(\w+[ -]\w*\s?\w*\s?\w*)/;
-            let prodNameRegex = /\?productName\=(\w+[ -]\w*(?:\w*(?:\s\w+)+)*)/;
+            let prodNameRegex = /\?productName\=(\w+[ -]\w*\-*\w*(?:\w*(?:\s\w+)+)*)/;
 
             let findQueryParam = prodNameRegex.exec(decodeURL);
             console.log(getURL);
